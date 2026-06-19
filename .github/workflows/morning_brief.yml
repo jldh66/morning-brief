@@ -1,0 +1,32 @@
+name: Morning Brief
+
+on:
+  schedule:
+    - cron: '0 4 * * 1-5'   # Mon–Fri 04:00 UTC = 06:00 Belgian CEST (summer)
+  workflow_dispatch:          # manual trigger from GitHub UI
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install yfinance numpy pandas scikit-learn requests
+          pip install -e .
+
+      - name: Run Morning Brief
+        env:
+          PYTHONIOENCODING: utf-8
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python morning_brief_cloud.py
