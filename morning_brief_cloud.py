@@ -18,6 +18,20 @@ from markov_hedge_fund_method.regime import (
 
 _CONG_CACHE = '/tmp/congress_cache.json'
 
+# Exchange filter — NASDAQ (NMS/NGM/NCM) and NYSE (NYQ/NYS) only; excludes Arca/OTC
+_NASDAQ_CODES = frozenset({'NMS', 'NGM', 'NCM'})
+_NYSE_CODES   = frozenset({'NYQ', 'NYS'})
+
+def exchange_label(code):
+    if not code:
+        return None
+    c = str(code).upper()
+    if 'NASDAQ' in c or c in _NASDAQ_CODES:
+        return 'NASDAQ'
+    if c in _NYSE_CODES or c == 'NYSE':
+        return 'NYSE'
+    return None
+
 _NL_MONTHS = ['', 'januari', 'februari', 'maart', 'april', 'mei', 'juni',
               'juli', 'augustus', 'september', 'oktober', 'november', 'december']
 
@@ -667,6 +681,7 @@ def fetch_premarket_movers(s_str, e_str, limit=10):
             'vol_ratio':  vr,
             'score':      abs(float(pm_chg or 0)) * vr,
             '_news_items': [],
+            'exchange':   q.get('exchange', ''),
         })
 
     candidates.sort(key=lambda x: x['score'], reverse=True)
@@ -699,7 +714,8 @@ def fetch_premarket_movers(s_str, e_str, limit=10):
             raw = c.get('_news_items', [])
             md['news']    = [(n.get('title','')[:70], n.get('publisher','')[:14])
                              for n in raw[:1]]
-            md['options'] = get_unusual_options(sym)
+            md['options']  = get_unusual_options(sym)
+            md['exchange'] = c.get('exchange', '')
             results.append(md)
         except Exception as ex:
             c['error']   = str(ex)[:50]
@@ -798,6 +814,157 @@ def t5_row(d, vol_ratio):
 # EMAIL
 # ══════════════════════════════════════════════════════════════════════════════
 
+# ══════════════════════════════════════════════════════════════════════════════
+# INSIDER SIGNALEN WATCHLIST — TRADE SETUPS (NASDAQ / NYSE)
+# Kolommen (10): TICKER=6 BEURS=8 BIAS=5 SIGNAL=7 CONF%=5
+#                ENTRY$=10 SL$=10 TARGET$=10 RISK%=5 R:R=5
+# inner = (6+2)+(8+2)+(5+2)+(7+2)+(5+2)+(10+2)+(10+2)+(10+2)+(5+2)+(5+2) + 9 = 100 ✓
+# ══════════════════════════════════════════════════════════════════════════════
+
+_IS_COLS = [
+    ('TICKER',  6,  'l'),
+    ('BEURS',   8,  'l'),
+    ('BIAS',    5,  'l'),
+    ('SIGNAL',  7,  'r'),
+    ('CONF%',   5,  'r'),
+    ('ENTRY $', 10, 'r'),
+    ('SL $',    10, 'r'),
+    ('TARGET$', 10, 'r'),
+    ('RISK %',  5,  'r'),
+    ('R:R',     5,  'r'),
+]
+
+def insider_trade_setups_section(all_movers, congress_data, vix):
+    """Trade setups voor alle NASDAQ/NYSE movers met LONG/SHORT bias, min 2:1 R:R."""
+    cols  = _IS_COLS
+    n     = len(cols)
+    inner = sum(w + 2 for _, w, _ in cols) + (n - 1)
+    pad  = lambda t: '║ ' + t.ljust(inner - 1) + '║'
+    hdiv = lambda l, m, r: l + m.join('═' * (w + 2) for _, w, _ in cols) + r
+    rdiv =                  '╟' + '╫'.join('─' * (w + 2) for _, w, _ in cols) + '╢'
+    hrow = lambda vals: '║' + '║'.join(_cell(v, w, a) for (_, w, a), v in zip(cols, vals)) + '║'
+
+    # Deduplicate by ticker, keep first occurrence
+    seen = set()
+    candidates = []
+    for m in all_movers:
+        sym = m.get('t') or m.get('sym', '')
+        if not sym or sym in seen:
+            continue
+        seen.add(sym)
+        # NASDAQ / NYSE filter
+        exch = exchange_label(m.get('exchange', ''))
+        if not exch:
+            continue
+        # Actionable bias only
+        if m.get('bias') not in ('LONG', 'SHORT'):
+            continue
+        if 'sig' not in m or 'close' not in m:
+            continue
+        candidates.append((m, exch))
+
+    rows = []
+    for m, exch in candidates:
+        sym  = m['t']
+        ins  = insider_summary(sym)
+        cong = congress_for(sym, congress_data)
+        vb   = calc_vix_beta(m['close'], vix['close'])
+        conf = calc_confidence(m, ins, cong)
+        lvl  = calc_trade_levels(m)
+        if not lvl:
+            continue
+
+        entry  = lvl['entry']
+        sl     = lvl['sl']
+        target = lvl['target']
+        risk   = lvl['risk_pct']
+        rr     = round(abs(target - entry) / max(abs(entry - sl), 0.0001), 1)
+        if rr < 2.0:
+            continue  # skip if somehow below 2:1
+
+        # Smart-money label for risk line
+        smart = []
+        if ins and ins['best_action']:
+            smart.append(f'INS:{ins["best_action"]}')
+        if cong:
+            smart.append(f'CONG:{cong[0]["action"]}')
+        smart_str = ' '.join(smart) if smart else '—'
+
+        rows.append({
+            'sym':    sym,
+            'exch':   exch,
+            'bias':   m['bias'],
+            'sig':    m['sig'],
+            'conf':   conf,
+            'entry':  entry,
+            'sl':     sl,
+            'target': target,
+            'risk':   risk,
+            'rr':     rr,
+            'smart':  smart_str,
+        })
+
+    rows.sort(key=lambda x: x['conf'], reverse=True)
+
+    lines = [
+        '╔' + '═' * inner + '╗',
+        pad('  INSIDER SIGNALEN — TRADE SETUPS  (NASDAQ / NYSE)  |  min. 2:1 R:R  |  1.5× ATR stop'),
+        hdiv('╠', '╦', '╣'),
+        hrow(name.center(w) for name, w, _ in cols),
+        hdiv('╠', '╬', '╣'),
+    ]
+
+    if not rows:
+        lines += [
+            pad('  Geen kwalificerende NASDAQ/NYSE setups vandaag (min. 2:1 R:R)'),
+            '╚' + '═' * inner + '╝',
+        ]
+        return '\n'.join(lines)
+
+    for i, r in enumerate(rows):
+        sl_sign  = '-' if r['sl']     < r['entry'] else '+'
+        tgt_sign = '+' if r['target'] > r['entry'] else '-'
+        lines.append(hrow([
+            r['sym'],
+            r['exch'],
+            r['bias'],
+            f'{r["sig"]:+.3f}',
+            f'{r["conf"]}%',
+            f'${r["entry"]:,.2f}',
+            f'${r["sl"]:,.2f}',
+            f'${r["target"]:,.2f}',
+            f'{sl_sign}{r["risk"]:.1f}%',
+            f'{r["rr"]:.1f}:1',
+        ]))
+        if i < len(rows) - 1:
+            lines.append(rdiv)
+
+    lines.append(hdiv('╠', '╩', '╣'))
+
+    # Key reads per row
+    lines.append(pad('  SETUPS:'))
+    for r in rows:
+        sl_sign  = '-' if r['sl']     < r['entry'] else '+'
+        tgt_sign = '+' if r['target'] > r['entry'] else '-'
+        kr = (f'    {r["sym"]:<6}  {r["bias"]:<5}  {r["sig"]:+.3f}  '
+              f'entry ${r["entry"]:,.2f}  SL ${r["sl"]:,.2f} ({sl_sign}{r["risk"]:.1f}%)  '
+              f'target ${r["target"]:,.2f}  R:R {r["rr"]:.1f}:1  |  {r["smart"]}')
+        lines.append(pad(kr[:inner - 1]))
+
+    top = rows[0]
+    lines += [
+        '╠' + '═' * inner + '╣',
+        pad(f'  TOP SETUP:  {top["sym"]}  [{top["exch"]}]  —  {top["conf"]}% confidence'
+            f'  |  {top["bias"]}  |  entry ${top["entry"]:,.2f}'
+            f'  →  target ${top["target"]:,.2f}  (R:R {top["rr"]:.1f}:1)'),
+        pad('  Entry = pre-markt prijs indien beschikbaar, anders slotkoers gisteren.'),
+        pad('  Stop = 1.5× 14-daagse ATR. Target = 2× risico (gegarandeerd ≥ 2:1 R:R).'),
+        pad('  Geen beleggingsadvies. Gebruik als startpunt voor eigen analyse.'),
+        '╚' + '═' * inner + '╝',
+    ]
+    return '\n'.join(lines)
+
+
 def send_email(subject, body):
     user     = os.environ['GMAIL_USER']
     password = os.environ['GMAIL_APP_PASSWORD']
@@ -850,11 +1017,12 @@ try:
         sym = q['symbol']
         try:
             md = run_markov(sym, s_str, e_str)
+            md['exchange'] = q.get('exchange', '')
             t5_data.append(md)
             t5_vols.append(f'{q["_vr"]:.1f}x')
             t5_names.append(q.get('shortName', sym)[:28])
         except Exception as ex:
-            t5_data.append({'t': sym, 'error': str(ex)})
+            t5_data.append({'t': sym, 'error': str(ex), 'exchange': q.get('exchange', '')})
             t5_vols.append('?')
             t5_names.append(q.get('shortName', sym)[:28])
 except Exception as ex:
@@ -897,6 +1065,11 @@ if ts_rows:
         if tv_setup:
             tv_setup_blk = tv_setup_section(tv_setup)
 
+# 6. Insider trade setups — NASDAQ/NYSE only, ≥ 2:1 R:R
+all_movers_dedup = pm_movers + [d for d in t5_data if d.get('t') not in
+                                {m.get('t') for m in pm_movers}]
+is_blk = insider_trade_setups_section(all_movers_dedup, congress_data, vix)
+
 t5_block = table_section(
     'TOP 5 MOMENTUM AANDELEN VANDAAG  ( |chg%| × volume vs 3-maands gemiddelde )',
     T5_COLS, t5_rows, t5_reads, t5_summary)
@@ -908,7 +1081,7 @@ ftr = header_box([
 sections = [hdr, macro_blk, vix_blk, pm_blk, ts_blk]
 if tv_setup_blk:
     sections.append(tv_setup_blk)
-sections += [t5_block, ftr]
+sections += [is_blk, t5_block, ftr]
 brief = '\n\n'.join(sections)
 print(brief)
 
