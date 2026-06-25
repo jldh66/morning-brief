@@ -5,8 +5,9 @@ Zelfde analyse als de lokale run_brief.py maar:
   - email via Python smtplib (GMAIL_USER + GMAIL_APP_PASSWORD env vars)
 """
 import warnings; warnings.filterwarnings('ignore')
-import sys, json, os, time, smtplib
-from email.mime.text import MIMEText
+import sys, json, os, re, time, smtplib
+from email.message import EmailMessage
+from email_template import _body_to_html
 import requests
 import yfinance as yf
 import pandas as pd
@@ -966,14 +967,17 @@ def insider_trade_setups_section(all_movers, congress_data, vix):
 
 
 def send_email(subject, body):
+    body = re.sub(r'\033\[[0-9;]*m', '', body)
     user     = os.environ['GMAIL_USER']
     password = os.environ['GMAIL_APP_PASSWORD']
-    msg = MIMEText(body, 'plain', 'utf-8')
-    msg['From']    = user
-    msg['To']      = user
+    to       = os.environ.get('GMAIL_TO') or user
+    msg = EmailMessage()
     msg['Subject'] = subject
-    with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
-        smtp.starttls()
+    msg['From']    = user
+    msg['To']      = to
+    msg.set_content(body)
+    msg.add_alternative(_body_to_html(subject, body), subtype='html')
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
         smtp.login(user, password)
         smtp.send_message(msg)
 
