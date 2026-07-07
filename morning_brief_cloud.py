@@ -5,9 +5,27 @@ Zelfde analyse als de lokale run_brief.py maar:
   - email via Python smtplib (GMAIL_USER + GMAIL_APP_PASSWORD env vars)
 """
 import warnings; warnings.filterwarnings('ignore')
+from zoneinfo import ZoneInfo
 import sys, json, os, re, time, smtplib
 from email.message import EmailMessage
 from email_template import _body_to_html
+
+# Load .env from this dir or fall back to insider-routines sibling dir
+def _load_env():
+    for candidate in [
+        os.path.join(os.path.dirname(__file__), '.env'),
+        os.path.join(os.path.dirname(__file__), '..', 'insider-routines', '.env'),
+    ]:
+        path = os.path.normpath(candidate)
+        if os.path.exists(path):
+            with open(path) as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#') and '=' in line:
+                        k, _, v = line.partition('=')
+                        os.environ.setdefault(k.strip(), v.strip())
+            break
+_load_env()
 import requests
 import yfinance as yf
 import pandas as pd
@@ -985,7 +1003,7 @@ def send_email(subject, body):
 # MAIN
 # ══════════════════════════════════════════════════════════════════════════════
 
-end   = pd.Timestamp.now('UTC').normalize()
+end   = pd.Timestamp.now(ZoneInfo('Europe/Brussels')).normalize()
 start = end - pd.DateOffset(years=2)
 s_str, e_str = start.strftime('%Y-%m-%d'), end.strftime('%Y-%m-%d')
 today = f'{end.day} {_NL_MONTHS[end.month]} {end.year}'
@@ -1087,7 +1105,7 @@ if tv_setup_blk:
     sections.append(tv_setup_blk)
 sections += [is_blk, t5_block, ftr]
 brief = '\n\n'.join(sections)
-print(brief)
+sys.stdout.buffer.write((brief + '\n').encode('utf-8', errors='replace'))
 
 # ══════════════════════════════════════════════════════════════════════════════
 # EMAIL
@@ -1106,7 +1124,7 @@ subject  = (f'Morning Brief — {today}{alert_tag}'
 
 try:
     send_email(subject, brief)
-    print('\n✓ Verstuurd naar jldh66@gmail.com')
+    sys.stdout.buffer.write('\n[OK] Verstuurd naar jldh66@gmail.com\n'.encode('utf-8'))
 except Exception as e:
-    print(f'\n✗ Email fout: {e}')
+    sys.stdout.buffer.write(f'\n[FOUT] Email fout: {e}\n'.encode('utf-8'))
     sys.exit(1)
