@@ -8,7 +8,7 @@ import warnings; warnings.filterwarnings('ignore')
 from zoneinfo import ZoneInfo
 import sys, json, os, re, time, smtplib
 from email.message import EmailMessage
-from email_template import _body_to_html
+from email_template import _body_to_html, _strip_ansi
 
 # Load .env from this dir or fall back to insider-routines sibling dir
 def _load_env():
@@ -985,10 +985,10 @@ def insider_trade_setups_section(all_movers, congress_data, vix):
 
 
 def send_email(subject, body):
-    body = re.sub(r'\033\[[0-9;]*m', '', body)
-    user     = os.environ['GMAIL_USER']
-    password = os.environ['GMAIL_APP_PASSWORD']
-    to       = os.environ.get('GMAIL_TO') or user
+    body = _strip_ansi(body)
+    user = os.environ['GMAIL_USER']
+    pw   = os.environ['GMAIL_APP_PASSWORD']
+    to   = os.environ.get('GMAIL_TO') or user
     msg = EmailMessage()
     msg['Subject'] = subject
     msg['From']    = user
@@ -996,7 +996,7 @@ def send_email(subject, body):
     msg.set_content(body)
     msg.add_alternative(_body_to_html(subject, body), subtype='html')
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-        smtp.login(user, password)
+        smtp.login(user, pw)
         smtp.send_message(msg)
 
 # ══════════════════════════════════════════════════════════════════════════════
