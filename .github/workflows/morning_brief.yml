@@ -22,6 +22,7 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install yfinance numpy pandas scikit-learn requests
+          pip install -r requirements.txt
           pip install -e .
 
       - name: Run Morning Brief

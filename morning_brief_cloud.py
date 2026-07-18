@@ -35,6 +35,12 @@ from markov_hedge_fund_method.regime import (
     label_regimes, build_transition_matrix, signal_from_matrix, STATES
 )
 
+try:
+    from garch_section import get_garch_html as _get_garch_html
+    _GARCH_AVAILABLE = True
+except ImportError:
+    _GARCH_AVAILABLE = False
+
 _CONG_CACHE = '/tmp/congress_cache.json'
 
 # Exchange filter — NASDAQ (NMS/NGM/NCM) and NYSE (NYQ/NYS) only; excludes Arca/OTC
@@ -1075,6 +1081,13 @@ hdr = header_box([
 
 macro_blk       = macro_section(macro)
 vix_blk         = vix_section(vix, valid_pm)
+
+# GARCH storm gauge — runs after VIX block, safe to fail
+try:
+    garch_blk = _get_garch_html() if _GARCH_AVAILABLE else None
+except Exception:
+    garch_blk = None
+
 pm_blk          = premarket_section(pm_movers)
 ts_blk, ts_rows = trade_setup_section(pm_movers, vix, congress_data)
 
@@ -1100,7 +1113,10 @@ ftr = header_box([
     '  Historische backtests — geen voorspelling van toekomstig rendement.',
 ], INNER)
 
-sections = [hdr, macro_blk, vix_blk, pm_blk, ts_blk]
+sections = [hdr, macro_blk, vix_blk]
+if garch_blk:
+    sections.append(garch_blk)
+sections += [pm_blk, ts_blk]
 if tv_setup_blk:
     sections.append(tv_setup_blk)
 sections += [is_blk, t5_block, ftr]
