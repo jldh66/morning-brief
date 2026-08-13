@@ -494,22 +494,40 @@ def calc_ease(d, vix_beta=None):
     return max(1, min(10, score))
 
 def calc_trade_levels(m):
+    """Entry/SL/target using 15-min ATR × 1.0 — daytrading sized, 1:2 R:R."""
     if m.get('bias') not in ('LONG', 'SHORT'):
         return None
-    entry     = float(m.get('pm_price') or m['last'])
-    close     = m['close']
-    std14     = float(close.pct_change().dropna().tail(14).std())
-    atr_pct   = std14 * 1.5 * 100
+    entry = float(m.get('pm_price') or m['last'])
+    sym   = m['t']
+    # 15-min ATR for intraday stop sizing
+    try:
+        _end15 = pd.Timestamp.now('UTC').normalize()
+        _st15  = (_end15 - pd.DateOffset(days=5)).strftime('%Y-%m-%d')
+        df15   = yf.download(sym, start=_st15, interval='15m', progress=False, auto_adjust=True)
+        if isinstance(df15.columns, pd.MultiIndex):
+            df15.columns = df15.columns.get_level_values(0)
+        if len(df15) >= 5:
+            h, l, cp = df15['High'], df15['Low'], df15['Close'].shift(1)
+            tr  = pd.concat([(h - l), (h - cp).abs(), (l - cp).abs()], axis=1).max(axis=1)
+            atr = float(tr.dropna().tail(14).mean())
+        else:
+            atr = None
+    except Exception:
+        atr = None
+    if not atr or atr < 0.01:
+        std14 = float(m['close'].pct_change().dropna().tail(14).std())
+        atr   = entry * std14 * 0.3
+    dist = atr  # 1.0× 15-min ATR
     if m['bias'] == 'LONG':
-        sl     = entry * (1 - atr_pct / 100)
-        target = entry + 2 * (entry - sl)
+        sl     = entry - dist
+        target = entry + 2 * dist
     else:
-        sl     = entry * (1 + atr_pct / 100)
-        target = entry - 2 * (sl - entry)
+        sl     = entry + dist
+        target = entry - 2 * dist
     risk_pct = abs(entry - sl) / entry * 100
     rr_pct   = abs(target - entry) / entry * 100
     return {
-        'sym':      m['t'],
+        'sym':      sym,
         'side':     m['bias'],
         'entry':    round(entry, 2),
         'sl':       round(sl,    2),
@@ -534,7 +552,7 @@ def tv_setup_section(setup):
         '╔' + '═' * inner + '╗',
         pad(f'  TRADE SETUP  —  {sym}  |  {side}  |  1:2 risico/beloning'),
         pad(f'  ENTRY:   ${entry:>10,.2f}   (referentieprijs)'),
-        pad(f'  STOP:    ${sl:>10,.2f}   ({sl_sign}{rp:.1f}%)  ←  1.5× dagelijkse volatiliteit'),
+        pad(f'  STOP:    ${sl:>10,.2f}   ({sl_sign}{rp:.1f}%)  ←  1.0× 15-min ATR'),
         pad(f'  TARGET:  ${target:>10,.2f}   ({tgt_sign}{rr:.1f}%)  →  2× risico (1:2 R:R)'),
         '╚' + '═' * inner + '╝',
     ]
