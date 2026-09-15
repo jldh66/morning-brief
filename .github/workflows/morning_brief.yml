@@ -1,8 +1,8 @@
 name: Morning Brief
 
 on:
-  schedule:
-    - cron: "0 10 * * 1-5"
+  # Schedule verwijderd 15/09/2026: GitHub-cron liep 4-6 uur te laat. De workflow wordt nu om 10:00 BE
+  # gestart door de Cloudflare Worker "morning-brief-cron" (workflow_dispatch).
   workflow_dispatch:
 
 jobs:
