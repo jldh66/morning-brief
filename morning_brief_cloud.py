@@ -877,6 +877,8 @@ _IS_COLS = [
     ('R:R',     5,  'r'),
 ]
 
+_IS_ROWS = []
+
 def insider_trade_setups_section(all_movers, congress_data, vix):
     """Trade setups voor alle NASDAQ/NYSE movers met LONG/SHORT bias, min 2:1 R:R."""
     cols  = _IS_COLS
@@ -948,6 +950,7 @@ def insider_trade_setups_section(all_movers, congress_data, vix):
         })
 
     rows.sort(key=lambda x: x['conf'], reverse=True)
+    _IS_ROWS[:] = rows   # voor watchlist.json (AI trading desk)
 
     lines = [
         '╔' + '═' * inner + '╗',
@@ -1122,6 +1125,19 @@ if ts_rows:
 all_movers_dedup = pm_movers + [d for d in t5_data if d.get('t') not in
                                 {m.get('t') for m in pm_movers}]
 is_blk = insider_trade_setups_section(all_movers_dedup, congress_data, vix)
+
+# watchlist.json voor de AI trading desk (Top Down-module): Trade setups + Insider setups, ontdubbeld
+try:
+    _wl = {}
+    for _r in ts_rows:
+        _wl.setdefault(_r['sym'], {'symbol': _r['sym'], 'bias': _r['bias'], 'conf': _r['conf'], 'source': 'trade_setup'})
+    for _r in _IS_ROWS:
+        _wl.setdefault(_r['sym'], {'symbol': _r['sym'], 'bias': _r['bias'], 'conf': _r['conf'], 'source': 'insider_setup'})
+    with open('watchlist.json', 'w', encoding='utf-8') as _f:
+        json.dump({'date': pd.Timestamp.now(ZoneInfo('Europe/Brussels')).date().isoformat(),
+                   'tickers': sorted(_wl.values(), key=lambda x: -x['conf'])}, _f, ensure_ascii=False, indent=1)
+except Exception as _e:
+    print('watchlist.json fout: ' + str(_e), file=sys.stderr)
 
 t5_block = table_section(
     'TOP 5 MOMENTUM AANDELEN VANDAAG  ( |chg%| × volume vs 3-maands gemiddelde )',
