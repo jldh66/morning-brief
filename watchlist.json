@@ -1,20 +1,8 @@
 {
- "date": "2026-10-18",
+ "date": "2026-10-19",
  "tickers": [
   {
-   "symbol": "CRGY",
-   "bias": "LONG",
-   "conf": 64,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "CRWV",
-   "bias": "SHORT",
-   "conf": 59,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "OKTA",
+   "symbol": "SLS",
    "bias": "SHORT",
    "conf": 56,
    "source": "trade_setup"
@@ -26,40 +14,64 @@
    "source": "trade_setup"
   },
   {
-   "symbol": "SLS",
-   "bias": "SHORT",
-   "conf": 55,
+   "symbol": "FMX",
+   "bias": "LONG",
+   "conf": 53,
    "source": "trade_setup"
   },
   {
-   "symbol": "NBIS",
+   "symbol": "TWLO",
    "bias": "SHORT",
    "conf": 52,
    "source": "trade_setup"
   },
   {
-   "symbol": "FROG",
-   "bias": "SHORT",
-   "conf": 47,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "VICR",
-   "bias": "SHORT",
-   "conf": 45,
-   "source": "trade_setup"
-  },
-  {
    "symbol": "VRNS",
    "bias": "SHORT",
-   "conf": 38,
+   "conf": 48,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "TALO",
+   "bias": "LONG",
+   "conf": 48,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "PBLS",
+   "bias": "SHORT",
+   "conf": 46,
    "source": "trade_setup"
   },
   {
    "symbol": "BSP",
    "bias": "LONG",
-   "conf": 35,
+   "conf": 45,
    "source": "trade_setup"
+  },
+  {
+   "symbol": "ERAS",
+   "bias": "SHORT",
+   "conf": 39,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "GRAL",
+   "bias": "SHORT",
+   "conf": 33,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CRWV",
+   "bias": "SHORT",
+   "conf": 24,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "NBIS",
+   "bias": "SHORT",
+   "conf": 22,
+   "source": "insider_setup"
   },
   {
    "symbol": "APLD",
