@@ -1,76 +1,64 @@
 {
- "date": "2026-10-19",
+ "date": "2026-10-20",
  "tickers": [
   {
-   "symbol": "SLS",
+   "symbol": "IRON",
+   "bias": "LONG",
+   "conf": 63,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "RBA",
    "bias": "SHORT",
-   "conf": 56,
+   "conf": 58,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "AGIO",
+   "bias": "LONG",
+   "conf": 44,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "AMTD",
+   "bias": "SHORT",
+   "conf": 44,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "PRAX",
+   "bias": "LONG",
+   "conf": 41,
    "source": "trade_setup"
   },
   {
    "symbol": "TLK",
    "bias": "SHORT",
-   "conf": 55,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "FMX",
-   "bias": "LONG",
-   "conf": 53,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "TWLO",
-   "bias": "SHORT",
-   "conf": 52,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "VRNS",
-   "bias": "SHORT",
-   "conf": 48,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "TALO",
-   "bias": "LONG",
-   "conf": 48,
+   "conf": 40,
    "source": "trade_setup"
   },
   {
    "symbol": "PBLS",
    "bias": "SHORT",
-   "conf": 46,
+   "conf": 36,
    "source": "trade_setup"
   },
   {
-   "symbol": "BSP",
+   "symbol": "VRDN",
    "bias": "LONG",
-   "conf": 45,
+   "conf": 36,
    "source": "trade_setup"
   },
   {
-   "symbol": "ERAS",
+   "symbol": "IBRX",
    "bias": "SHORT",
-   "conf": 39,
+   "conf": 34,
    "source": "trade_setup"
   },
   {
-   "symbol": "GRAL",
-   "bias": "SHORT",
-   "conf": 33,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "CRWV",
-   "bias": "SHORT",
+   "symbol": "RIG",
+   "bias": "LONG",
    "conf": 24,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "NBIS",
-   "bias": "SHORT",
-   "conf": 22,
    "source": "insider_setup"
   },
   {
@@ -80,10 +68,16 @@
    "source": "insider_setup"
   },
   {
-   "symbol": "IREN",
+   "symbol": "WULF",
    "bias": "SHORT",
-   "conf": 21,
+   "conf": 19,
    "source": "insider_setup"
+  },
+  {
+   "symbol": "MANE",
+   "bias": "NEUTRAL",
+   "conf": 6,
+   "source": "trade_setup"
   }
  ]
 }
