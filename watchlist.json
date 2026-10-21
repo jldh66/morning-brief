@@ -1,83 +1,77 @@
 {
- "date": "2026-10-20",
+ "date": "2026-10-21",
  "tickers": [
   {
-   "symbol": "IRON",
+   "symbol": "BRZE",
+   "bias": "LONG",
+   "conf": 66,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "HAS",
+   "bias": "LONG",
+   "conf": 64,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "RCUS",
    "bias": "LONG",
    "conf": 63,
    "source": "trade_setup"
   },
   {
-   "symbol": "RBA",
-   "bias": "SHORT",
-   "conf": 58,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "AGIO",
+   "symbol": "LION",
    "bias": "LONG",
-   "conf": 44,
+   "conf": 62,
    "source": "trade_setup"
   },
   {
-   "symbol": "AMTD",
+   "symbol": "GM",
    "bias": "SHORT",
-   "conf": 44,
+   "conf": 62,
    "source": "trade_setup"
   },
   {
-   "symbol": "PRAX",
+   "symbol": "KVYO",
    "bias": "LONG",
-   "conf": 41,
+   "conf": 56,
    "source": "trade_setup"
   },
   {
-   "symbol": "TLK",
-   "bias": "SHORT",
-   "conf": 40,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "PBLS",
-   "bias": "SHORT",
-   "conf": 36,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "VRDN",
+   "symbol": "SPHR",
    "bias": "LONG",
-   "conf": 36,
+   "conf": 55,
    "source": "trade_setup"
   },
   {
-   "symbol": "IBRX",
+   "symbol": "DPC",
    "bias": "SHORT",
-   "conf": 34,
+   "conf": 49,
    "source": "trade_setup"
   },
   {
-   "symbol": "RIG",
+   "symbol": "MLI",
+   "bias": "SHORT",
+   "conf": 48,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CWST",
+   "bias": "LONG",
+   "conf": 45,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "KEY",
    "bias": "LONG",
    "conf": 24,
    "source": "insider_setup"
   },
   {
-   "symbol": "APLD",
-   "bias": "SHORT",
-   "conf": 22,
+   "symbol": "RKT",
+   "bias": "LONG",
+   "conf": 21,
    "source": "insider_setup"
-  },
-  {
-   "symbol": "WULF",
-   "bias": "SHORT",
-   "conf": 19,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "MANE",
-   "bias": "NEUTRAL",
-   "conf": 6,
-   "source": "trade_setup"
   }
  ]
 }
