@@ -1,76 +1,94 @@
 {
- "date": "2026-10-21",
+ "date": "2026-10-22",
  "tickers": [
   {
-   "symbol": "BRZE",
+   "symbol": "KYIV",
    "bias": "LONG",
-   "conf": 66,
+   "conf": 65,
    "source": "trade_setup"
   },
   {
-   "symbol": "HAS",
-   "bias": "LONG",
+   "symbol": "LAD",
+   "bias": "SHORT",
    "conf": 64,
    "source": "trade_setup"
   },
   {
-   "symbol": "RCUS",
-   "bias": "LONG",
-   "conf": 63,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "LION",
-   "bias": "LONG",
-   "conf": 62,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "GM",
-   "bias": "SHORT",
-   "conf": 62,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "KVYO",
-   "bias": "LONG",
-   "conf": 56,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "SPHR",
+   "symbol": "APPN",
    "bias": "LONG",
    "conf": 55,
    "source": "trade_setup"
   },
   {
-   "symbol": "DPC",
+   "symbol": "MHO",
    "bias": "SHORT",
+   "conf": 53,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "WFRD",
+   "bias": "LONG",
    "conf": 49,
    "source": "trade_setup"
   },
   {
-   "symbol": "MLI",
-   "bias": "SHORT",
+   "symbol": "IRON",
+   "bias": "LONG",
    "conf": 48,
    "source": "trade_setup"
   },
   {
-   "symbol": "CWST",
-   "bias": "LONG",
-   "conf": 45,
+   "symbol": "TLX",
+   "bias": "SHORT",
+   "conf": 47,
    "source": "trade_setup"
   },
   {
-   "symbol": "KEY",
+   "symbol": "ALMR",
    "bias": "LONG",
+   "conf": 46,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "RCUS",
+   "bias": "SHORT",
+   "conf": 43,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "HSAI",
+   "bias": "SHORT",
+   "conf": 42,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "NFLX",
+   "bias": "SHORT",
+   "conf": 25,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "JD",
+   "bias": "SHORT",
    "conf": 24,
    "source": "insider_setup"
   },
   {
-   "symbol": "RKT",
+   "symbol": "SKYD",
    "bias": "LONG",
    "conf": 21,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "SPCX",
+   "bias": "LONG",
+   "conf": 21,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "SMCI",
+   "bias": "LONG",
+   "conf": 5,
    "source": "insider_setup"
   }
  ]
