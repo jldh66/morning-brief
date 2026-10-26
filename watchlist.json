@@ -1,15 +1,15 @@
 {
- "date": "2026-10-25",
+ "date": "2026-10-26",
  "tickers": [
-  {
-   "symbol": "LKQ",
-   "bias": "SHORT",
-   "conf": 63,
-   "source": "trade_setup"
-  },
   {
    "symbol": "RHI",
    "bias": "LONG",
+   "conf": 62,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "SLM",
+   "bias": "SHORT",
    "conf": 62,
    "source": "trade_setup"
   },
@@ -20,33 +20,15 @@
    "source": "trade_setup"
   },
   {
-   "symbol": "CORT",
-   "bias": "SHORT",
-   "conf": 58,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "FLG",
-   "bias": "SHORT",
-   "conf": 56,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "GMAB",
-   "bias": "LONG",
-   "conf": 55,
-   "source": "trade_setup"
-  },
-  {
    "symbol": "FCNCA",
    "bias": "LONG",
    "conf": 54,
    "source": "trade_setup"
   },
   {
-   "symbol": "SLM",
+   "symbol": "FLG",
    "bias": "SHORT",
-   "conf": 52,
+   "conf": 51,
    "source": "trade_setup"
   },
   {
@@ -56,15 +38,39 @@
    "source": "trade_setup"
   },
   {
-   "symbol": "RGC",
+   "symbol": "GL",
    "bias": "SHORT",
+   "conf": 47,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "BBD",
+   "bias": "LONG",
    "conf": 39,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "ITUB",
+   "bias": "LONG",
+   "conf": 35,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "NU",
+   "bias": "LONG",
+   "conf": 34,
    "source": "trade_setup"
   },
   {
    "symbol": "T",
    "bias": "SHORT",
    "conf": 24,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "LKQ",
+   "bias": "SHORT",
+   "conf": 23,
    "source": "insider_setup"
   },
   {
