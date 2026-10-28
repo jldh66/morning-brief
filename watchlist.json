@@ -1,82 +1,82 @@
 {
- "date": "2026-10-27",
+ "date": "2026-10-28",
  "tickers": [
   {
-   "symbol": "XNCR",
+   "symbol": "KNSA",
    "bias": "LONG",
    "conf": 63,
    "source": "trade_setup"
   },
   {
-   "symbol": "ORKA",
-   "bias": "LONG",
-   "conf": 58,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "TIMB",
+   "symbol": "UNF",
    "bias": "SHORT",
-   "conf": 55,
+   "conf": 62,
    "source": "trade_setup"
   },
   {
-   "symbol": "SGRY",
+   "symbol": "ABG",
    "bias": "LONG",
    "conf": 52,
    "source": "trade_setup"
   },
   {
-   "symbol": "VIV",
+   "symbol": "AWI",
    "bias": "SHORT",
+   "conf": 51,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CTOS",
+   "bias": "LONG",
    "conf": 49,
    "source": "trade_setup"
   },
   {
-   "symbol": "XP",
-   "bias": "SHORT",
+   "symbol": "HWKN",
+   "bias": "LONG",
    "conf": 49,
    "source": "trade_setup"
   },
   {
-   "symbol": "ELPC",
+   "symbol": "EEFT",
    "bias": "SHORT",
    "conf": 47,
    "source": "trade_setup"
   },
   {
-   "symbol": "RGC",
-   "bias": "SHORT",
-   "conf": 39,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "EGIEY",
-   "bias": "SHORT",
-   "conf": 29,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "BMA",
-   "bias": "NEUTRAL",
-   "conf": 26,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "RRC",
+   "symbol": "CHRN",
    "bias": "LONG",
-   "conf": 24,
+   "conf": 43,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "DPC",
+   "bias": "SHORT",
+   "conf": 35,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "UCTT",
+   "bias": "LONG",
+   "conf": 33,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "BA",
+   "bias": "SHORT",
+   "conf": 25,
    "source": "insider_setup"
   },
   {
-   "symbol": "INTR",
+   "symbol": "CRWV",
    "bias": "SHORT",
-   "conf": 22,
+   "conf": 25,
    "source": "insider_setup"
   },
   {
-   "symbol": "BBD",
+   "symbol": "CIFR",
    "bias": "SHORT",
-   "conf": 22,
+   "conf": 21,
    "source": "insider_setup"
   }
  ]
