@@ -1,94 +1,82 @@
 {
- "date": "2026-10-29",
+ "date": "2026-11-01",
  "tickers": [
   {
-   "symbol": "AXGN",
-   "bias": "LONG",
-   "conf": 66,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "LPLA",
+   "symbol": "RDDT",
    "bias": "SHORT",
    "conf": 63,
    "source": "trade_setup"
   },
   {
-   "symbol": "EAT",
-   "bias": "LONG",
-   "conf": 61,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "SLS",
+   "symbol": "INTC",
    "bias": "SHORT",
-   "conf": 60,
+   "conf": 63,
    "source": "trade_setup"
   },
   {
-   "symbol": "WING",
-   "bias": "LONG",
-   "conf": 58,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "LCII",
-   "bias": "LONG",
-   "conf": 55,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "ICLR",
+   "symbol": "MEOH",
    "bias": "LONG",
    "conf": 54,
    "source": "trade_setup"
   },
   {
-   "symbol": "LSTR",
+   "symbol": "CACC",
    "bias": "SHORT",
-   "conf": 50,
+   "conf": 53,
    "source": "trade_setup"
   },
   {
-   "symbol": "ZWS",
+   "symbol": "TFII",
    "bias": "SHORT",
+   "conf": 53,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "REGN",
+   "bias": "LONG",
+   "conf": 52,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "BFAM",
+   "bias": "SHORT",
+   "conf": 51,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "GPN",
+   "bias": "LONG",
    "conf": 48,
    "source": "trade_setup"
   },
   {
-   "symbol": "GMAB",
+   "symbol": "CDNA",
    "bias": "LONG",
-   "conf": 25,
-   "source": "insider_setup"
+   "conf": 47,
+   "source": "trade_setup"
   },
   {
-   "symbol": "BSX",
+   "symbol": "RBLX",
    "bias": "SHORT",
-   "conf": 24,
-   "source": "insider_setup"
+   "conf": 44,
+   "source": "trade_setup"
   },
   {
-   "symbol": "ORCL",
-   "bias": "LONG",
-   "conf": 23,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "STLA",
+   "symbol": "RIVN",
    "bias": "LONG",
    "conf": 22,
    "source": "insider_setup"
   },
   {
-   "symbol": "FTNT",
-   "bias": "NEUTRAL",
+   "symbol": "AMD",
+   "bias": "SHORT",
    "conf": 21,
-   "source": "trade_setup"
+   "source": "insider_setup"
   },
   {
-   "symbol": "SKHY",
-   "bias": "LONG",
-   "conf": 13,
+   "symbol": "MRVL",
+   "bias": "SHORT",
+   "conf": 19,
    "source": "insider_setup"
   }
  ]
