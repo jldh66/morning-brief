@@ -1,20 +1,20 @@
 {
- "date": "2026-11-01",
+ "date": "2026-11-02",
  "tickers": [
   {
-   "symbol": "RDDT",
-   "bias": "SHORT",
-   "conf": 63,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "INTC",
-   "bias": "SHORT",
-   "conf": 63,
-   "source": "trade_setup"
-  },
-  {
    "symbol": "MEOH",
+   "bias": "LONG",
+   "conf": 64,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "GPN",
+   "bias": "LONG",
+   "conf": 63,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "FDXF",
    "bias": "LONG",
    "conf": 54,
    "source": "trade_setup"
@@ -32,21 +32,27 @@
    "source": "trade_setup"
   },
   {
-   "symbol": "REGN",
-   "bias": "LONG",
-   "conf": 52,
-   "source": "trade_setup"
-  },
-  {
    "symbol": "BFAM",
    "bias": "SHORT",
    "conf": 51,
    "source": "trade_setup"
   },
   {
-   "symbol": "GPN",
+   "symbol": "CVCO",
    "bias": "LONG",
-   "conf": 48,
+   "conf": 50,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "SKYW",
+   "bias": "SHORT",
+   "conf": 49,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CSQR",
+   "bias": "SHORT",
+   "conf": 49,
    "source": "trade_setup"
   },
   {
@@ -56,10 +62,16 @@
    "source": "trade_setup"
   },
   {
-   "symbol": "RBLX",
+   "symbol": "RDDT",
    "bias": "SHORT",
-   "conf": 44,
-   "source": "trade_setup"
+   "conf": 23,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "INTC",
+   "bias": "SHORT",
+   "conf": 23,
+   "source": "insider_setup"
   },
   {
    "symbol": "RIVN",
