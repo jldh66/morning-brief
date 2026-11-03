@@ -1,70 +1,70 @@
 {
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "tickers": [
   {
-   "symbol": "MEOH",
+   "symbol": "NWL",
    "bias": "LONG",
-   "conf": 64,
+   "conf": 58,
    "source": "trade_setup"
   },
   {
-   "symbol": "GPN",
+   "symbol": "WING",
    "bias": "LONG",
-   "conf": 63,
+   "conf": 58,
    "source": "trade_setup"
   },
   {
-   "symbol": "FDXF",
+   "symbol": "MGRC",
    "bias": "LONG",
-   "conf": 54,
+   "conf": 52,
    "source": "trade_setup"
   },
   {
-   "symbol": "CACC",
-   "bias": "SHORT",
-   "conf": 53,
+   "symbol": "LOAR",
+   "bias": "LONG",
+   "conf": 52,
    "source": "trade_setup"
   },
   {
-   "symbol": "TFII",
-   "bias": "SHORT",
-   "conf": 53,
+   "symbol": "IDXX",
+   "bias": "LONG",
+   "conf": 51,
    "source": "trade_setup"
   },
   {
-   "symbol": "BFAM",
+   "symbol": "KRYS",
    "bias": "SHORT",
    "conf": 51,
    "source": "trade_setup"
   },
   {
-   "symbol": "CVCO",
-   "bias": "LONG",
-   "conf": 50,
+   "symbol": "SFM",
+   "bias": "SHORT",
+   "conf": 51,
    "source": "trade_setup"
   },
   {
-   "symbol": "SKYW",
-   "bias": "SHORT",
+   "symbol": "AIN",
+   "bias": "LONG",
    "conf": 49,
    "source": "trade_setup"
   },
   {
-   "symbol": "CSQR",
+   "symbol": "DFTX",
    "bias": "SHORT",
-   "conf": 49,
+   "conf": 48,
    "source": "trade_setup"
   },
   {
-   "symbol": "CDNA",
+   "symbol": "PHIN",
    "bias": "LONG",
-   "conf": 47,
+   "conf": 44,
    "source": "trade_setup"
   },
   {
-   "symbol": "RDDT",
+   "symbol": "ORCL",
    "bias": "SHORT",
-   "conf": 23,
+   "conf": 24,
    "source": "insider_setup"
   },
   {
@@ -80,7 +80,7 @@
    "source": "insider_setup"
   },
   {
-   "symbol": "AMD",
+   "symbol": "VG",
    "bias": "SHORT",
    "conf": 21,
    "source": "insider_setup"
