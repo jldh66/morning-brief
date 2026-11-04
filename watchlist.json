@@ -1,94 +1,82 @@
 {
- "date": "2026-11-03",
+ "date": "2026-11-04",
  "tickers": [
   {
-   "symbol": "NWL",
+   "symbol": "XMTR",
    "bias": "LONG",
-   "conf": 58,
+   "conf": 64,
    "source": "trade_setup"
   },
   {
-   "symbol": "WING",
+   "symbol": "LSCC",
    "bias": "LONG",
-   "conf": 58,
+   "conf": 62,
    "source": "trade_setup"
   },
   {
-   "symbol": "MGRC",
-   "bias": "LONG",
-   "conf": 52,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "LOAR",
-   "bias": "LONG",
-   "conf": 52,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "IDXX",
-   "bias": "LONG",
-   "conf": 51,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "KRYS",
+   "symbol": "DT",
    "bias": "SHORT",
-   "conf": 51,
+   "conf": 62,
    "source": "trade_setup"
   },
   {
-   "symbol": "SFM",
-   "bias": "SHORT",
-   "conf": 51,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "AIN",
+   "symbol": "NBIX",
    "bias": "LONG",
-   "conf": 49,
+   "conf": 62,
    "source": "trade_setup"
   },
   {
-   "symbol": "DFTX",
+   "symbol": "MDGL",
+   "bias": "SHORT",
+   "conf": 60,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CVI",
+   "bias": "SHORT",
+   "conf": 55,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "STVN",
+   "bias": "SHORT",
+   "conf": 54,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "RYTM",
    "bias": "SHORT",
    "conf": 48,
    "source": "trade_setup"
   },
   {
-   "symbol": "PHIN",
+   "symbol": "FN",
    "bias": "LONG",
-   "conf": 44,
+   "conf": 48,
    "source": "trade_setup"
   },
   {
-   "symbol": "ORCL",
-   "bias": "SHORT",
-   "conf": 24,
-   "source": "insider_setup"
+   "symbol": "GPK",
+   "bias": "LONG",
+   "conf": 46,
+   "source": "trade_setup"
   },
   {
-   "symbol": "INTC",
-   "bias": "SHORT",
+   "symbol": "GRAB",
+   "bias": "LONG",
    "conf": 23,
    "source": "insider_setup"
   },
   {
-   "symbol": "RIVN",
-   "bias": "LONG",
-   "conf": 22,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "VG",
+   "symbol": "CIFR",
    "bias": "SHORT",
    "conf": 21,
    "source": "insider_setup"
   },
   {
-   "symbol": "MRVL",
+   "symbol": "OKTA",
    "bias": "SHORT",
-   "conf": 19,
+   "conf": 21,
    "source": "insider_setup"
   }
  ]
