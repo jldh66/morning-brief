@@ -1,70 +1,82 @@
 {
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "tickers": [
   {
-   "symbol": "XMTR",
-   "bias": "LONG",
-   "conf": 64,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "LSCC",
-   "bias": "LONG",
-   "conf": 62,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "DT",
-   "bias": "SHORT",
-   "conf": 62,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "NBIX",
-   "bias": "LONG",
-   "conf": 62,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "MDGL",
-   "bias": "SHORT",
-   "conf": 60,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "CVI",
-   "bias": "SHORT",
-   "conf": 55,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "STVN",
-   "bias": "SHORT",
-   "conf": 54,
-   "source": "trade_setup"
-  },
-  {
    "symbol": "RYTM",
+   "bias": "LONG",
+   "conf": 63,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "YOU",
+   "bias": "LONG",
+   "conf": 63,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "DOX",
+   "bias": "SHORT",
+   "conf": 62,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "KD",
+   "bias": "LONG",
+   "conf": 62,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "VRDN",
+   "bias": "LONG",
+   "conf": 62,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "DUOL",
+   "bias": "LONG",
+   "conf": 61,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "LIVN",
+   "bias": "LONG",
+   "conf": 53,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "UNM",
+   "bias": "SHORT",
+   "conf": 49,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "ECG",
    "bias": "SHORT",
    "conf": 48,
    "source": "trade_setup"
   },
   {
-   "symbol": "FN",
-   "bias": "LONG",
+   "symbol": "STRL",
+   "bias": "SHORT",
    "conf": 48,
    "source": "trade_setup"
   },
   {
-   "symbol": "GPK",
+   "symbol": "AMZN",
    "bias": "LONG",
-   "conf": 46,
-   "source": "trade_setup"
+   "conf": 24,
+   "source": "insider_setup"
   },
   {
-   "symbol": "GRAB",
+   "symbol": "RIOT",
    "bias": "LONG",
-   "conf": 23,
+   "conf": 22,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "IREN",
+   "bias": "SHORT",
+   "conf": 22,
    "source": "insider_setup"
   },
   {
@@ -74,9 +86,9 @@
    "source": "insider_setup"
   },
   {
-   "symbol": "OKTA",
-   "bias": "SHORT",
-   "conf": 21,
+   "symbol": "HL",
+   "bias": "LONG",
+   "conf": 1,
    "source": "insider_setup"
   }
  ]
