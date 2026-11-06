@@ -1,94 +1,94 @@
 {
- "date": "2026-11-05",
+ "date": "2026-11-06",
  "tickers": [
   {
-   "symbol": "RYTM",
-   "bias": "LONG",
-   "conf": 63,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "YOU",
-   "bias": "LONG",
-   "conf": 63,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "DOX",
+   "symbol": "LOPE",
    "bias": "SHORT",
-   "conf": 62,
+   "conf": 54,
    "source": "trade_setup"
   },
   {
-   "symbol": "KD",
+   "symbol": "PBH",
+   "bias": "SHORT",
+   "conf": 54,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "IPAR",
    "bias": "LONG",
-   "conf": 62,
+   "conf": 54,
    "source": "trade_setup"
   },
   {
-   "symbol": "VRDN",
-   "bias": "LONG",
-   "conf": 62,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "DUOL",
-   "bias": "LONG",
-   "conf": 61,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "LIVN",
+   "symbol": "FWONA",
    "bias": "LONG",
    "conf": 53,
    "source": "trade_setup"
   },
   {
-   "symbol": "UNM",
+   "symbol": "DAVE",
    "bias": "SHORT",
-   "conf": 49,
+   "conf": 51,
    "source": "trade_setup"
   },
   {
-   "symbol": "ECG",
-   "bias": "SHORT",
-   "conf": 48,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "STRL",
-   "bias": "SHORT",
-   "conf": 48,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "AMZN",
+   "symbol": "ECPG",
    "bias": "LONG",
-   "conf": 24,
-   "source": "insider_setup"
+   "conf": 46,
+   "source": "trade_setup"
   },
   {
-   "symbol": "RIOT",
-   "bias": "LONG",
-   "conf": 22,
-   "source": "insider_setup"
+   "symbol": "ASX",
+   "bias": "SHORT",
+   "conf": 37,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "WULF",
+   "bias": "SHORT",
+   "conf": 29,
+   "source": "trade_setup"
   },
   {
    "symbol": "IREN",
    "bias": "SHORT",
+   "conf": 27,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "SNDK",
+   "bias": "SHORT",
+   "conf": 25,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "MCHP",
+   "bias": "SHORT",
+   "conf": 24,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "U",
+   "bias": "LONG",
+   "conf": 23,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "AMD",
+   "bias": "SHORT",
    "conf": 22,
    "source": "insider_setup"
   },
   {
-   "symbol": "CIFR",
+   "symbol": "MU",
    "bias": "SHORT",
-   "conf": 21,
+   "conf": 22,
    "source": "insider_setup"
   },
   {
-   "symbol": "HL",
-   "bias": "LONG",
-   "conf": 1,
+   "symbol": "MRVL",
+   "bias": "SHORT",
+   "conf": 19,
    "source": "insider_setup"
   }
  ]
