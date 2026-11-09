@@ -1,12 +1,6 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "tickers": [
-  {
-   "symbol": "TMDX",
-   "bias": "LONG",
-   "conf": 64,
-   "source": "trade_setup"
-  },
   {
    "symbol": "DKNG",
    "bias": "SHORT",
@@ -14,51 +8,57 @@
    "source": "trade_setup"
   },
   {
-   "symbol": "FROG",
-   "bias": "LONG",
-   "conf": 63,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "FLY",
-   "bias": "LONG",
-   "conf": 61,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "LASR",
-   "bias": "LONG",
+   "symbol": "WK",
+   "bias": "SHORT",
    "conf": 59,
    "source": "trade_setup"
   },
   {
-   "symbol": "KRMN",
+   "symbol": "NMIH",
+   "bias": "SHORT",
+   "conf": 49,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CLMT",
+   "bias": "SHORT",
+   "conf": 48,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "PPTA",
    "bias": "LONG",
-   "conf": 55,
+   "conf": 48,
    "source": "trade_setup"
   },
   {
    "symbol": "AXON",
    "bias": "SHORT",
-   "conf": 55,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "BKD",
-   "bias": "SHORT",
-   "conf": 54,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "IRTC",
-   "bias": "SHORT",
-   "conf": 53,
+   "conf": 40,
    "source": "trade_setup"
   },
   {
    "symbol": "GMED",
    "bias": "SHORT",
-   "conf": 53,
+   "conf": 38,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "MNDY",
+   "bias": "SHORT",
+   "conf": 37,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CARG",
+   "bias": "LONG",
+   "conf": 34,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CECO",
+   "bias": "SHORT",
+   "conf": 28,
    "source": "trade_setup"
   },
   {
