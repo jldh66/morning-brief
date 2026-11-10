@@ -1,88 +1,88 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "tickers": [
-  {
-   "symbol": "DKNG",
-   "bias": "SHORT",
-   "conf": 64,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "WK",
-   "bias": "SHORT",
-   "conf": 59,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "NMIH",
-   "bias": "SHORT",
-   "conf": 49,
-   "source": "trade_setup"
-  },
   {
    "symbol": "CLMT",
    "bias": "SHORT",
-   "conf": 48,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "PPTA",
-   "bias": "LONG",
-   "conf": 48,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "AXON",
-   "bias": "SHORT",
-   "conf": 40,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "GMED",
-   "bias": "SHORT",
-   "conf": 38,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "MNDY",
-   "bias": "SHORT",
-   "conf": 37,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "CARG",
-   "bias": "LONG",
-   "conf": 34,
+   "conf": 58,
    "source": "trade_setup"
   },
   {
    "symbol": "CECO",
+   "bias": "LONG",
+   "conf": 50,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "TTD",
+   "bias": "LONG",
+   "conf": 47,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "VIA",
+   "bias": "LONG",
+   "conf": 45,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "ALMR",
+   "bias": "LONG",
+   "conf": 37,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "LIF",
+   "bias": "SHORT",
+   "conf": 32,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "DPC",
+   "bias": "LONG",
+   "conf": 32,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "FLY",
+   "bias": "LONG",
+   "conf": 31,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "LGN",
    "bias": "SHORT",
    "conf": 28,
    "source": "trade_setup"
   },
   {
-   "symbol": "MCHP",
+   "symbol": "COHR",
+   "bias": "LONG",
+   "conf": 28,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "HIMS",
    "bias": "SHORT",
    "conf": 24,
    "source": "insider_setup"
   },
   {
-   "symbol": "IREN",
-   "bias": "SHORT",
-   "conf": 22,
+   "symbol": "LFST",
+   "bias": "LONG",
+   "conf": 23,
    "source": "insider_setup"
   },
   {
-   "symbol": "IONQ",
+   "symbol": "QXO",
    "bias": "LONG",
    "conf": 22,
    "source": "insider_setup"
   },
   {
-   "symbol": "WULF",
+   "symbol": "IBRX",
    "bias": "SHORT",
-   "conf": 18,
+   "conf": 19,
    "source": "insider_setup"
   }
  ]
