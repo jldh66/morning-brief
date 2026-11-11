@@ -1,64 +1,58 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "tickers": [
   {
-   "symbol": "CLMT",
+   "symbol": "AMD",
+   "bias": "LONG",
+   "conf": 59,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "NOVT",
    "bias": "SHORT",
-   "conf": 58,
+   "conf": 51,
    "source": "trade_setup"
   },
   {
-   "symbol": "CECO",
+   "symbol": "AAON",
    "bias": "LONG",
-   "conf": 50,
+   "conf": 51,
    "source": "trade_setup"
   },
   {
-   "symbol": "TTD",
+   "symbol": "JHX",
    "bias": "LONG",
-   "conf": 47,
+   "conf": 41,
    "source": "trade_setup"
   },
   {
-   "symbol": "VIA",
-   "bias": "LONG",
-   "conf": 45,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "ALMR",
-   "bias": "LONG",
+   "symbol": "PS",
+   "bias": "SHORT",
    "conf": 37,
    "source": "trade_setup"
   },
   {
-   "symbol": "LIF",
+   "symbol": "CRWV",
+   "bias": "SHORT",
+   "conf": 35,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "TREX",
+   "bias": "LONG",
+   "conf": 34,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "NVDA",
+   "bias": "SHORT",
+   "conf": 33,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "IREN",
    "bias": "SHORT",
    "conf": 32,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "DPC",
-   "bias": "LONG",
-   "conf": 32,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "FLY",
-   "bias": "LONG",
-   "conf": 31,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "LGN",
-   "bias": "SHORT",
-   "conf": 28,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "COHR",
-   "bias": "LONG",
-   "conf": 28,
    "source": "trade_setup"
   },
   {
@@ -68,21 +62,15 @@
    "source": "insider_setup"
   },
   {
-   "symbol": "LFST",
-   "bias": "LONG",
-   "conf": 23,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "QXO",
-   "bias": "LONG",
-   "conf": 22,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "IBRX",
+   "symbol": "AXTI",
    "bias": "SHORT",
-   "conf": 19,
+   "conf": 21,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "LUMN",
+   "bias": "LONG",
+   "conf": 3,
    "source": "insider_setup"
   }
  ]
