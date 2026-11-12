@@ -1,77 +1,77 @@
 {
- "date": "2026-11-11",
+ "date": "2026-11-12",
  "tickers": [
   {
-   "symbol": "AMD",
+   "symbol": "REZI",
    "bias": "LONG",
-   "conf": 59,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "NOVT",
-   "bias": "SHORT",
-   "conf": 51,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "AAON",
-   "bias": "LONG",
-   "conf": 51,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "JHX",
-   "bias": "LONG",
-   "conf": 41,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "PS",
-   "bias": "SHORT",
-   "conf": 37,
+   "conf": 55,
    "source": "trade_setup"
   },
   {
    "symbol": "CRWV",
-   "bias": "SHORT",
-   "conf": 35,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "TREX",
    "bias": "LONG",
-   "conf": 34,
+   "conf": 49,
    "source": "trade_setup"
   },
   {
    "symbol": "NVDA",
    "bias": "SHORT",
-   "conf": 33,
+   "conf": 49,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "YETI",
+   "bias": "SHORT",
+   "conf": 46,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "TWST",
+   "bias": "SHORT",
+   "conf": 46,
    "source": "trade_setup"
   },
   {
    "symbol": "IREN",
    "bias": "SHORT",
-   "conf": 32,
+   "conf": 42,
    "source": "trade_setup"
   },
   {
-   "symbol": "HIMS",
+   "symbol": "TTEK",
    "bias": "SHORT",
-   "conf": 24,
+   "conf": 39,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "NBIS",
+   "bias": "LONG",
+   "conf": 30,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "MU",
+   "bias": "LONG",
+   "conf": 26,
    "source": "insider_setup"
+  },
+  {
+   "symbol": "CORZ",
+   "bias": "LONG",
+   "conf": 22,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "SEPN",
+   "bias": "LONG",
+   "conf": 12,
+   "source": "trade_setup"
   },
   {
    "symbol": "AXTI",
-   "bias": "SHORT",
-   "conf": 21,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "LUMN",
    "bias": "LONG",
    "conf": 3,
-   "source": "insider_setup"
+   "source": "trade_setup"
   }
  ]
 }
