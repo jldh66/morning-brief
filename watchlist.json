@@ -1,15 +1,39 @@
 {
- "date": "2026-11-12",
+ "date": "2026-11-13",
  "tickers": [
   {
-   "symbol": "REZI",
-   "bias": "LONG",
-   "conf": 55,
+   "symbol": "DGII",
+   "bias": "SHORT",
+   "conf": 54,
    "source": "trade_setup"
   },
   {
-   "symbol": "CRWV",
+   "symbol": "TRMK",
    "bias": "LONG",
+   "conf": 54,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "GPN",
+   "bias": "SHORT",
+   "conf": 51,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "HWC",
+   "bias": "SHORT",
+   "conf": 50,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "NBIS",
+   "bias": "LONG",
+   "conf": 50,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "NIQ",
+   "bias": "SHORT",
    "conf": 49,
    "source": "trade_setup"
   },
@@ -20,58 +44,40 @@
    "source": "trade_setup"
   },
   {
-   "symbol": "YETI",
-   "bias": "SHORT",
-   "conf": 46,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "TWST",
-   "bias": "SHORT",
-   "conf": 46,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "IREN",
-   "bias": "SHORT",
-   "conf": 42,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "TTEK",
-   "bias": "SHORT",
-   "conf": 39,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "NBIS",
+   "symbol": "DPC",
    "bias": "LONG",
-   "conf": 30,
+   "conf": 41,
    "source": "trade_setup"
   },
   {
-   "symbol": "MU",
-   "bias": "LONG",
-   "conf": 26,
+   "symbol": "CTVA",
+   "bias": "SHORT",
+   "conf": 24,
    "source": "insider_setup"
   },
   {
-   "symbol": "CORZ",
+   "symbol": "RLAY",
+   "bias": "LONG",
+   "conf": 23,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "VIR",
    "bias": "LONG",
    "conf": 22,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "LUNR",
+   "bias": "LONG",
+   "conf": 21,
    "source": "insider_setup"
   },
   {
-   "symbol": "SEPN",
+   "symbol": "SMCI",
    "bias": "LONG",
-   "conf": 12,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "AXTI",
-   "bias": "LONG",
-   "conf": 3,
-   "source": "trade_setup"
+   "conf": 4,
+   "source": "insider_setup"
   }
  ]
 }
