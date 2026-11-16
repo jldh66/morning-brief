@@ -1,82 +1,70 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-16",
  "tickers": [
   {
-   "symbol": "DGII",
-   "bias": "SHORT",
-   "conf": 54,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "TRMK",
+   "symbol": "WWW",
    "bias": "LONG",
-   "conf": 54,
+   "conf": 59,
    "source": "trade_setup"
   },
   {
-   "symbol": "GPN",
+   "symbol": "CVLT",
    "bias": "SHORT",
-   "conf": 51,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "HWC",
-   "bias": "SHORT",
-   "conf": 50,
+   "conf": 52,
    "source": "trade_setup"
   },
   {
    "symbol": "NBIS",
+   "bias": "SHORT",
+   "conf": 42,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "MOD",
    "bias": "LONG",
-   "conf": 50,
+   "conf": 39,
    "source": "trade_setup"
   },
   {
-   "symbol": "NIQ",
+   "symbol": "CGON",
    "bias": "SHORT",
-   "conf": 49,
+   "conf": 35,
    "source": "trade_setup"
   },
   {
-   "symbol": "NVDA",
+   "symbol": "SMMT",
    "bias": "SHORT",
-   "conf": 49,
+   "conf": 35,
    "source": "trade_setup"
   },
   {
-   "symbol": "DPC",
+   "symbol": "CBRS",
    "bias": "LONG",
-   "conf": 41,
+   "conf": 34,
    "source": "trade_setup"
   },
   {
-   "symbol": "CTVA",
-   "bias": "SHORT",
+   "symbol": "TOP",
+   "bias": "LONG",
+   "conf": 31,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "AMD",
+   "bias": "LONG",
+   "conf": 29,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CRWV",
+   "bias": "LONG",
    "conf": 24,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "RLAY",
-   "bias": "LONG",
-   "conf": 23,
    "source": "trade_setup"
   },
   {
-   "symbol": "VIR",
+   "symbol": "NU",
    "bias": "LONG",
-   "conf": 22,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "LUNR",
-   "bias": "LONG",
-   "conf": 21,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "SMCI",
-   "bias": "LONG",
-   "conf": 4,
+   "conf": 24,
    "source": "insider_setup"
   }
  ]
