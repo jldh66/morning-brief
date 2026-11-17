@@ -1,71 +1,65 @@
 {
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "tickers": [
   {
-   "symbol": "WWW",
-   "bias": "LONG",
-   "conf": 59,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "CVLT",
+   "symbol": "HBM",
    "bias": "SHORT",
-   "conf": 52,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "NBIS",
-   "bias": "SHORT",
-   "conf": 42,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "MOD",
-   "bias": "LONG",
-   "conf": 39,
+   "conf": 47,
    "source": "trade_setup"
   },
   {
    "symbol": "CGON",
-   "bias": "SHORT",
-   "conf": 35,
+   "bias": "LONG",
+   "conf": 37,
    "source": "trade_setup"
   },
   {
-   "symbol": "SMMT",
-   "bias": "SHORT",
-   "conf": 35,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "CBRS",
+   "symbol": "MOH",
    "bias": "LONG",
    "conf": 34,
    "source": "trade_setup"
   },
   {
-   "symbol": "TOP",
-   "bias": "LONG",
-   "conf": 31,
+   "symbol": "NIO",
+   "bias": "SHORT",
+   "conf": 33,
    "source": "trade_setup"
   },
   {
-   "symbol": "AMD",
-   "bias": "LONG",
+   "symbol": "AAOI",
+   "bias": "SHORT",
+   "conf": 32,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "TIGO",
+   "bias": "SHORT",
    "conf": 29,
    "source": "trade_setup"
   },
   {
-   "symbol": "CRWV",
-   "bias": "LONG",
-   "conf": 24,
+   "symbol": "TSEM",
+   "bias": "SHORT",
+   "conf": 27,
    "source": "trade_setup"
   },
   {
-   "symbol": "NU",
-   "bias": "LONG",
-   "conf": 24,
+   "symbol": "VALE",
+   "bias": "SHORT",
+   "conf": 25,
    "source": "insider_setup"
+  },
+  {
+   "symbol": "TU",
+   "bias": "LONG",
+   "conf": 22,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "RUM",
+   "bias": "SHORT",
+   "conf": 18,
+   "source": "trade_setup"
   }
  ]
 }
