@@ -1,64 +1,88 @@
 {
- "date": "2026-11-17",
+ "date": "2026-11-18",
  "tickers": [
   {
-   "symbol": "HBM",
+   "symbol": "WCN",
+   "bias": "SHORT",
+   "conf": 51,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "IDYA",
    "bias": "SHORT",
    "conf": 47,
    "source": "trade_setup"
   },
   {
-   "symbol": "CGON",
+   "symbol": "UNFI",
    "bias": "LONG",
-   "conf": 37,
+   "conf": 47,
    "source": "trade_setup"
   },
   {
-   "symbol": "MOH",
-   "bias": "LONG",
+   "symbol": "SMMT",
+   "bias": "SHORT",
+   "conf": 45,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "NVDA",
+   "bias": "SHORT",
    "conf": 34,
    "source": "trade_setup"
   },
   {
-   "symbol": "NIO",
-   "bias": "SHORT",
-   "conf": 33,
+   "symbol": "CGON",
+   "bias": "LONG",
+   "conf": 32,
    "source": "trade_setup"
   },
   {
-   "symbol": "AAOI",
+   "symbol": "SBAC",
    "bias": "SHORT",
    "conf": 32,
    "source": "trade_setup"
   },
   {
-   "symbol": "TIGO",
-   "bias": "SHORT",
-   "conf": 29,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "TSEM",
-   "bias": "SHORT",
-   "conf": 27,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "VALE",
-   "bias": "SHORT",
-   "conf": 25,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "TU",
+   "symbol": "LFTO",
    "bias": "LONG",
-   "conf": 22,
+   "conf": 26,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "SLS",
+   "bias": "LONG",
+   "conf": 24,
    "source": "insider_setup"
   },
   {
-   "symbol": "RUM",
+   "symbol": "LUMN",
    "bias": "SHORT",
-   "conf": 18,
+   "conf": 24,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "SNAP",
+   "bias": "LONG",
+   "conf": 23,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "NKE",
+   "bias": "SHORT",
+   "conf": 23,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "SA",
+   "bias": "LONG",
+   "conf": 15,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "GFF",
+   "bias": "NEUTRAL",
+   "conf": 11,
    "source": "trade_setup"
   }
  ]
