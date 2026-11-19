@@ -1,89 +1,83 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "tickers": [
   {
-   "symbol": "WCN",
+   "symbol": "ACIW",
    "bias": "SHORT",
-   "conf": 51,
+   "conf": 42,
    "source": "trade_setup"
   },
   {
-   "symbol": "IDYA",
-   "bias": "SHORT",
-   "conf": 47,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "UNFI",
+   "symbol": "MFP",
    "bias": "LONG",
-   "conf": 47,
+   "conf": 41,
    "source": "trade_setup"
   },
   {
-   "symbol": "SMMT",
+   "symbol": "ELV",
    "bias": "SHORT",
-   "conf": 45,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "NVDA",
-   "bias": "SHORT",
-   "conf": 34,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "CGON",
-   "bias": "LONG",
-   "conf": 32,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "SBAC",
-   "bias": "SHORT",
-   "conf": 32,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "LFTO",
-   "bias": "LONG",
-   "conf": 26,
+   "conf": 41,
    "source": "trade_setup"
   },
   {
    "symbol": "SLS",
    "bias": "LONG",
-   "conf": 24,
-   "source": "insider_setup"
+   "conf": 39,
+   "source": "trade_setup"
   },
   {
-   "symbol": "LUMN",
+   "symbol": "AAOI",
    "bias": "SHORT",
-   "conf": 24,
-   "source": "insider_setup"
+   "conf": 37,
+   "source": "trade_setup"
   },
   {
-   "symbol": "SNAP",
+   "symbol": "OGC",
+   "bias": "SHORT",
+   "conf": 37,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "PARR",
+   "bias": "SHORT",
+   "conf": 36,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "PLBL",
+   "bias": "LONG",
+   "conf": 32,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "ASTS",
+   "bias": "SHORT",
+   "conf": 23,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "TJX",
    "bias": "LONG",
    "conf": 23,
    "source": "insider_setup"
   },
   {
-   "symbol": "NKE",
+   "symbol": "MDLN",
    "bias": "SHORT",
    "conf": 23,
    "source": "insider_setup"
   },
   {
-   "symbol": "SA",
-   "bias": "LONG",
-   "conf": 15,
+   "symbol": "IREN",
+   "bias": "SHORT",
+   "conf": 22,
    "source": "trade_setup"
   },
   {
-   "symbol": "GFF",
-   "bias": "NEUTRAL",
-   "conf": 11,
-   "source": "trade_setup"
+   "symbol": "PRMB",
+   "bias": "SHORT",
+   "conf": 22,
+   "source": "insider_setup"
   }
  ]
 }
