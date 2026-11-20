@@ -1,80 +1,68 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "tickers": [
   {
-   "symbol": "ACIW",
+   "symbol": "NTES",
+   "bias": "SHORT",
+   "conf": 62,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "AMD",
+   "bias": "SHORT",
+   "conf": 56,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "UGI",
+   "bias": "SHORT",
+   "conf": 52,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "SNEX",
+   "bias": "SHORT",
+   "conf": 52,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "GLBE",
+   "bias": "SHORT",
+   "conf": 51,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "HP",
+   "bias": "SHORT",
+   "conf": 47,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "ROAD",
+   "bias": "SHORT",
+   "conf": 44,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "YMM",
+   "bias": "LONG",
+   "conf": 44,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "DAVE",
    "bias": "SHORT",
    "conf": 42,
    "source": "trade_setup"
   },
   {
-   "symbol": "MFP",
-   "bias": "LONG",
-   "conf": 41,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "ELV",
-   "bias": "SHORT",
-   "conf": 41,
-   "source": "trade_setup"
-  },
-  {
    "symbol": "SLS",
    "bias": "LONG",
-   "conf": 39,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "AAOI",
-   "bias": "SHORT",
-   "conf": 37,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "OGC",
-   "bias": "SHORT",
-   "conf": 37,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "PARR",
-   "bias": "SHORT",
-   "conf": 36,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "PLBL",
-   "bias": "LONG",
-   "conf": 32,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "ASTS",
-   "bias": "SHORT",
-   "conf": 23,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "TJX",
-   "bias": "LONG",
-   "conf": 23,
+   "conf": 24,
    "source": "insider_setup"
   },
   {
-   "symbol": "MDLN",
-   "bias": "SHORT",
-   "conf": 23,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "IREN",
-   "bias": "SHORT",
-   "conf": 22,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "PRMB",
+   "symbol": "NBIS",
    "bias": "SHORT",
    "conf": 22,
    "source": "insider_setup"
