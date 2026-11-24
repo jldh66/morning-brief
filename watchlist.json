@@ -1,71 +1,83 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "tickers": [
   {
-   "symbol": "WSC",
+   "symbol": "NBIS",
    "bias": "SHORT",
-   "conf": 50,
+   "conf": 57,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "KYMR",
+   "bias": "LONG",
+   "conf": 56,
    "source": "trade_setup"
   },
   {
    "symbol": "NVDA",
-   "bias": "SHORT",
-   "conf": 49,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "BLTE",
-   "bias": "SHORT",
-   "conf": 49,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "ARM",
-   "bias": "SHORT",
-   "conf": 39,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "ASX",
-   "bias": "SHORT",
-   "conf": 33,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "MU",
-   "bias": "SHORT",
-   "conf": 31,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "CRWV",
-   "bias": "SHORT",
-   "conf": 29,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "NBIS",
-   "bias": "SHORT",
-   "conf": 27,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "IREN",
-   "bias": "SHORT",
-   "conf": 27,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "APLD",
-   "bias": "SHORT",
-   "conf": 27,
+   "bias": "LONG",
+   "conf": 48,
    "source": "trade_setup"
   },
   {
    "symbol": "AMD",
    "bias": "SHORT",
-   "conf": 21,
+   "conf": 36,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "HPE",
+   "bias": "LONG",
+   "conf": 34,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "KSS",
+   "bias": "SHORT",
+   "conf": 28,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "DELL",
+   "bias": "LONG",
+   "conf": 28,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CRWV",
+   "bias": "SHORT",
+   "conf": 25,
    "source": "insider_setup"
+  },
+  {
+   "symbol": "IREN",
+   "bias": "SHORT",
+   "conf": 22,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "APLD",
+   "bias": "SHORT",
+   "conf": 22,
+   "source": "insider_setup"
+  },
+  {
+   "symbol": "SMTC",
+   "bias": "LONG",
+   "conf": 18,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "PLBL",
+   "bias": "LONG",
+   "conf": 17,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "MU",
+   "bias": "NEUTRAL",
+   "conf": 15,
+   "source": "trade_setup"
   }
  ]
 }
