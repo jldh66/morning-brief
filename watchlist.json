@@ -1,53 +1,71 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "tickers": [
   {
-   "symbol": "NBIS",
-   "bias": "SHORT",
-   "conf": 57,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "KYMR",
+   "symbol": "SNY",
    "bias": "LONG",
-   "conf": 56,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "NVDA",
-   "bias": "LONG",
-   "conf": 48,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "AMD",
-   "bias": "SHORT",
-   "conf": 36,
+   "conf": 52,
    "source": "trade_setup"
   },
   {
    "symbol": "HPE",
-   "bias": "LONG",
-   "conf": 34,
+   "bias": "SHORT",
+   "conf": 48,
    "source": "trade_setup"
   },
   {
-   "symbol": "KSS",
-   "bias": "SHORT",
-   "conf": 28,
+   "symbol": "STOK",
+   "bias": "LONG",
+   "conf": 43,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "TRVI",
+   "bias": "LONG",
+   "conf": 43,
    "source": "trade_setup"
   },
   {
    "symbol": "DELL",
-   "bias": "LONG",
-   "conf": 28,
+   "bias": "SHORT",
+   "conf": 41,
    "source": "trade_setup"
   },
   {
-   "symbol": "CRWV",
-   "bias": "SHORT",
-   "conf": 25,
+   "symbol": "IRON",
+   "bias": "LONG",
+   "conf": 38,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CYTK",
+   "bias": "LONG",
+   "conf": 37,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "PRAX",
+   "bias": "LONG",
+   "conf": 36,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "TRAX",
+   "bias": "LONG",
+   "conf": 36,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "INSM",
+   "bias": "LONG",
+   "conf": 24,
    "source": "insider_setup"
+  },
+  {
+   "symbol": "NVDA",
+   "bias": "LONG",
+   "conf": 22,
+   "source": "trade_setup"
   },
   {
    "symbol": "IREN",
@@ -56,28 +74,10 @@
    "source": "insider_setup"
   },
   {
-   "symbol": "APLD",
-   "bias": "SHORT",
-   "conf": 22,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "SMTC",
-   "bias": "LONG",
-   "conf": 18,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "PLBL",
-   "bias": "LONG",
-   "conf": 17,
-   "source": "trade_setup"
-  },
-  {
    "symbol": "MU",
-   "bias": "NEUTRAL",
-   "conf": 15,
-   "source": "trade_setup"
+   "bias": "SHORT",
+   "conf": 21,
+   "source": "insider_setup"
   }
  ]
 }
