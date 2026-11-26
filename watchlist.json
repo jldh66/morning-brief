@@ -1,82 +1,76 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "tickers": [
   {
-   "symbol": "SNY",
+   "symbol": "NTNX",
+   "bias": "SHORT",
+   "conf": 64,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "LI",
+   "bias": "LONG",
+   "conf": 60,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "CENT",
+   "bias": "SHORT",
+   "conf": 54,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "ASTS",
    "bias": "LONG",
    "conf": 52,
    "source": "trade_setup"
   },
   {
-   "symbol": "HPE",
+   "symbol": "CENTA",
    "bias": "SHORT",
+   "conf": 50,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "URBN",
+   "bias": "SHORT",
+   "conf": 49,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "BSP",
+   "bias": "LONG",
    "conf": 48,
    "source": "trade_setup"
   },
   {
-   "symbol": "STOK",
+   "symbol": "COGT",
+   "bias": "LONG",
+   "conf": 47,
+   "source": "trade_setup"
+  },
+  {
+   "symbol": "HPQ",
    "bias": "LONG",
    "conf": 43,
    "source": "trade_setup"
   },
   {
-   "symbol": "TRVI",
-   "bias": "LONG",
-   "conf": 43,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "DELL",
+   "symbol": "LBTYB",
    "bias": "SHORT",
-   "conf": 41,
+   "conf": 28,
    "source": "trade_setup"
   },
   {
-   "symbol": "IRON",
-   "bias": "LONG",
-   "conf": 38,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "CYTK",
-   "bias": "LONG",
-   "conf": 37,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "PRAX",
-   "bias": "LONG",
-   "conf": 36,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "TRAX",
-   "bias": "LONG",
-   "conf": 36,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "INSM",
-   "bias": "LONG",
-   "conf": 24,
+   "symbol": "JOBY",
+   "bias": "SHORT",
+   "conf": 23,
    "source": "insider_setup"
   },
   {
-   "symbol": "NVDA",
+   "symbol": "RKT",
    "bias": "LONG",
    "conf": 22,
-   "source": "trade_setup"
-  },
-  {
-   "symbol": "IREN",
-   "bias": "SHORT",
-   "conf": 22,
-   "source": "insider_setup"
-  },
-  {
-   "symbol": "MU",
-   "bias": "SHORT",
-   "conf": 21,
    "source": "insider_setup"
   }
  ]
