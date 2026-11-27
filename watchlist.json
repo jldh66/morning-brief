@@ -1,12 +1,6 @@
 {
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "tickers": [
-  {
-   "symbol": "NTNX",
-   "bias": "SHORT",
-   "conf": 64,
-   "source": "trade_setup"
-  },
   {
    "symbol": "LI",
    "bias": "LONG",
@@ -20,7 +14,7 @@
    "source": "trade_setup"
   },
   {
-   "symbol": "ASTS",
+   "symbol": "RKT",
    "bias": "LONG",
    "conf": 52,
    "source": "trade_setup"
@@ -32,27 +26,27 @@
    "source": "trade_setup"
   },
   {
-   "symbol": "URBN",
+   "symbol": "NTNX",
    "bias": "SHORT",
-   "conf": 49,
+   "conf": 39,
    "source": "trade_setup"
   },
   {
-   "symbol": "BSP",
+   "symbol": "CAR",
    "bias": "LONG",
-   "conf": 48,
+   "conf": 38,
    "source": "trade_setup"
   },
   {
-   "symbol": "COGT",
-   "bias": "LONG",
-   "conf": 47,
+   "symbol": "XE",
+   "bias": "SHORT",
+   "conf": 35,
    "source": "trade_setup"
   },
   {
-   "symbol": "HPQ",
-   "bias": "LONG",
-   "conf": 43,
+   "symbol": "SNDK",
+   "bias": "SHORT",
+   "conf": 31,
    "source": "trade_setup"
   },
   {
@@ -62,16 +56,22 @@
    "source": "trade_setup"
   },
   {
+   "symbol": "HPQ",
+   "bias": "LONG",
+   "conf": 23,
+   "source": "insider_setup"
+  },
+  {
    "symbol": "JOBY",
    "bias": "SHORT",
    "conf": 23,
    "source": "insider_setup"
   },
   {
-   "symbol": "RKT",
+   "symbol": "BBD",
    "bias": "LONG",
-   "conf": 22,
-   "source": "insider_setup"
+   "conf": 17,
+   "source": "trade_setup"
   }
  ]
 }
